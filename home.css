@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/n\,bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
+    max-width: 600px;
+}
+
+.input-group {
+    max-width: 400px;
+    margin: auto;
+}
+
+.container1{
+    background-color: black;
+    border-top: 3px solid red;
+    box-shadow: 5px white;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 90%;
+}
+
+.trending-container {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.trending-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px;
+    scrollbar-width: none; 
+}
+
+.trending-row::-webkit-scrollbar {
+    display: none;
+}
+
+.trending-item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 160px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.trending-item:hover {
+    transform: scale(1.1);
+}
+
+.trending-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.rank {
+    position: absolute;
+    top: 150px;
+    left: -20px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 100;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+
+.Reason-item{
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(7, 53, 27);
+    font-size: small;
+    height: 250px;
+    width: 250px;
+    padding-left: 10px;
+    padding-top: 14px;
+}
+
+.icon{
+    float: right;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.faq-container{
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.faq-question{
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    position: relative;
+    color: white;
+    margin-bottom: 5px;
+    background-color: #222;
+}
+
+.faq-question:hover{
+    background-color: #4e4545;
+}
+
+.faq-question h3{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+.faq-toggle{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.email{
+    margin-top: 60px;
+}
+
+.email input{
+    height: 60px;
+    width: 600px;
+    background-color: #0e0b0b;
+    color: rgb(247, 243, 243);
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.email input:focus{
+    border: 4px solid greenyellow;
+}
+
+.email button{
+    background-color: red;
+    color: white;
+    height: 60px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.email button:hover{
+    background-color: rgb(189, 39, 39);
+}
+
+.links-list{
+    margin-top: 40px;
+}
+
+.links{
+    color: white;
+}
+
+select{
+    background-color: #333;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
